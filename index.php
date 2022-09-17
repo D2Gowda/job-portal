@@ -17,7 +17,7 @@
         </ul>
     </nav>
     <div class="content">
-            <img src="./IMAGE/img1.jpg">
+            <img src="./Image/img1.jpg">
     </div>
     <style>
         .content img{
