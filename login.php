@@ -37,7 +37,6 @@ if(isset($_POST['submit'])){
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +51,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     
+    <!--header design-->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -64,7 +64,8 @@ if(isset($_POST['submit'])){
             <li><a href="register.php">Register</a></li>
         </ul>
     </nav>
-
+   
+    <!-- form design -->
     <div class="form-container">
         <form action="" method="post">
             <h3>login now</h3>

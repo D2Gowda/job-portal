@@ -39,7 +39,7 @@
             <img src="./Image/img1.jpg">
     </div>
 
-    <!--footer design-->
     <?php include('footer.php') ?>
+
 </body>
 </html>
