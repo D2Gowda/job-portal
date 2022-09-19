@@ -15,6 +15,7 @@
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
 </head>
 <body>
@@ -36,7 +37,7 @@
     </nav>
 
     <div class="content">
-            <img src="./Image/img1.jpg">
+            <img src="./image/img1.jpg">
     </div>
 
     <?php include('footer.php') ?>

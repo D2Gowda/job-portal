@@ -89,15 +89,5 @@ if(isset($_POST['submit'])){
 
     <?php include('footer.php') ?>
 
-    <style>
-        label.light{
-            color: white;
-            font-size: 50px;
-            line-height: 80px;
-            padding-left: 650px;
-            font-weight: bold;
-        }
-    </style>
-
 </body>
 </html>

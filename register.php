@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+@include 'connect.php';
 
 if(isset($_POST['submit'])){
 
@@ -43,6 +43,7 @@ if(isset($_POST['submit'])){
 
     <!-- custom css file link-->
     <link rel="stylesheet" type="text/css"href="./CSS/c1.css">
+
 </head>
 <body>
 
