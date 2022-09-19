@@ -47,15 +47,22 @@ if(isset($_POST['submit'])){
     <title>Login Form</title>
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="./CSS/c1.css">
-    <link rel="stylesheet" href="./CSS/c2.css">
-    <link rel="stylesheet" href="./CSS/c3.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
 <body>
     
     <nav>
-        <label class="light">Applex</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Applex</label>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a class="active" href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+        </ul>
     </nav>
 
     <div class="form-container">
@@ -78,6 +85,8 @@ if(isset($_POST['submit'])){
             <p>Don't have an account? <a href="register.php">Register now</a></p>
         </form>
     </div>
+
+    <?php include('footer.php') ?>
 
     <style>
         label.light{
