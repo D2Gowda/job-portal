@@ -1,5 +1,39 @@
 <?php
 
+@include 'config.php';
+
+
+if(isset($_POST['submit'])){
+
+    $name = mysqli_real_escape_string($con,$_POST['name']);
+    $email = mysqli_real_escape_string($con,$_POST['email']);
+    $pass = md5($_POST['password']);
+    $cpass = md5($_POST['cpassword']);
+    $user_type = $_POST['user_type'];
+
+    $select = " SELECT * FROM user WHERE email = '$email' && password = '$pass'";
+
+    $result = mysqli_query($con, $select);
+
+    if(mysqli_num_rows($result) > 0){
+
+        $row = mysqli_fetch_array($result);
+
+        if($row['user_type'] == 'admin'){
+            $_SESSION['admin_name'] = $row['name'];
+            header('location:admin.php');
+
+        }elseif($row['user_type'] == 'user'){
+            $_SESSION['user_name'] = $row['name'];
+            header('location:index.php');
+
+        }
+
+    }else{
+        $error[] = 'incorrect email or password!';
+    }
+
+};
 
 ?>
 
