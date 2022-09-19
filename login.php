@@ -46,8 +46,10 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
 
-    <!-- custom css file link-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./CSS/c1.css">
+    <link rel="stylesheet" href="./CSS/c2.css">
+    <link rel="stylesheet" href="./CSS/c3.css">
 
 </head>
 <body>
